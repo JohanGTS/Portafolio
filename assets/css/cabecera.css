@@ -1,0 +1,17 @@
+
+.cabecera{
+    display: flex;
+    justify-content: right;
+    margin-bottom: 2rem;
+}
+
+.navegacion{
+    display: flex;
+    margin-right: 4rem;
+    margin-top: 1.4rem;
+}
+
+.menu__item{
+    list-style: none;
+    padding: 0 1rem 0 1rem;
+}
