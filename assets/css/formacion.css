@@ -1,5 +1,7 @@
 
 .formacion{
+    display: flex;
+    flex-direction: column;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     background-color: #cad2c55d;
@@ -42,4 +44,46 @@
     font-size: 10px;
     font-weight: 700;
     color: #464646;
+}
+
+@media screen and (min-width:0)  {
+
+    .formacion{
+        flex-direction: column;
+    }
+
+	.formacion__lista{
+            flex-direction: column;
+            align-items: center;
+    }
+
+    .formacion__contenido{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:762px)  {
+    .formacion__lista{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .formacion__contenido{
+        width: calc(30% - 2rem)
+    }
+}
+
+@media screen and (min-width:962px)  {
+    .formacion{
+        flex-direction: column;
+    }
+
+    .formacion__lista{
+        flex-direction: row;
+    }
+
+    .formacion__contenido{
+        width: 20%;
+    }
+    
 }

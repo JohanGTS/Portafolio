@@ -1,8 +1,8 @@
 
 .cabecera{
     display: flex;
-    justify-content: right;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    
 }
 
 .navegacion{
@@ -11,7 +11,45 @@
     margin-top: 1.4rem;
 }
 
+.cabecera__texto{
+    font-weight: 700;
+    margin-top: 1.4rem;
+}
+
 .menu__item{
     list-style: none;
     padding: 0 1rem 0 1rem;
+}
+
+
+	@media screen and (min-width:0)  {
+
+        .cabecera{
+            
+            justify-content: space-between;
+        }
+
+        .navegacion{
+            display: none;
+        }
+	    
+	}
+	
+	@media screen and (min-width:762px)  {
+	    .navegacion{
+            display: none;
+        }
+	}
+	
+	@media screen and (min-width:962px)  {
+
+        .cabecera{
+            
+            justify-content: space-around;
+        }
+        
+	    .navegacion{
+            display: flex;
+        }
+	    
 }

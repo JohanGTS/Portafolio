@@ -8,6 +8,10 @@
     align-items: center;
 }
 
+.contacto__formulario{
+    width: 20rem;
+}
+
 .contacto__conjuntoCampos{
     background-color: #fff;
     display: flex;
@@ -16,7 +20,6 @@
     margin: 2rem 0;
     border-radius: 4px;
     padding: 0.5rem 0.5rem;
-    width: 100%;
 }
 
 .contacto__etiqueta{
@@ -54,4 +57,22 @@
 
 .contacto__campo:focus,.contacto__mensaje:focus{
     outline: none;
+}
+
+@media screen and (min-width:0)  {
+    .contacto__conjuntoCampos,.contacto__mensaje{
+        width: 85%;
+    }
+    
+	    
+}
+
+@media screen and (min-width:762px)  {
+    
+}
+
+@media screen and (min-width:962px)  {
+    .contacto__conjuntoCampos,.contacto__mensaje{
+        width: 100%;
+    }
 }

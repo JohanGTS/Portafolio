@@ -20,7 +20,6 @@
     align-items: flex-start;
     flex-direction: column;
     list-style: none;
-    width: 10%;
     height: 6rem;
     margin: 1rem;
     box-sizing: border-box;
@@ -35,4 +34,29 @@
 
 .skills__descripcion{
     width: auto;
+}
+
+@media screen and (min-width:0)  {
+	.skill__lista{
+        flex-wrap: wrap;
+    }
+
+    .skills__contenido{
+        
+        width: calc(45% - 2rem);
+    }
+}
+
+@media screen and (min-width:762px)  {
+    
+    .skills__contenido{
+        
+        width: calc(30% - 2rem);
+    }
+}
+
+@media screen and (min-width:962px)  {
+    .skills__contenido{
+        width: 10%;
+    }
 }
