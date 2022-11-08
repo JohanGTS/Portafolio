@@ -27,6 +27,7 @@
         .cabecera{
             
             justify-content: space-between;
+            margin: 0 2rem
         }
 
         .navegacion{
